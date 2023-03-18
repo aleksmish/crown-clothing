@@ -1,4 +1,6 @@
-.checkout-item-container {
+import styled from 'styled-components'
+
+export const CheckoutItemContainer = styled.tr`
   width: 100%;
   display: flex;
   min-height: 100px;
@@ -7,7 +9,7 @@
   font-size: 20px;
   justify-content: space-between;
   align-items: center;
-
+  
   .image-container {
     img {
       width: 100%;
@@ -15,7 +17,7 @@
     }
   }
 
-  .quantity {
+.quantity {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,4 +34,4 @@
   .remove-button {
     cursor: pointer;
   }
-}
+`
