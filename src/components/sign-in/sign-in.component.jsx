@@ -6,6 +6,7 @@ import { ButtonsContainer, SignUpContainer } from './sign-in.styles.jsx'
 import { useDispatch } from 'react-redux'
 import { onGoogleSignInStart } from '../../store/user/user.saga'
 import { emailSignInStart } from '../../store/user/user.action'
+import { googleSignIn } from '../../store/user/user.action'
 
 const defaultFormFields = {
   email: "",
@@ -22,7 +23,7 @@ const SignIn = () => {
   }
 
   const signInWithGoogle = async () => {
-    dispatch(onGoogleSignInStart())
+    dispatch(googleSignIn())
   }
 
   const handleSubmit = async (event) => {
