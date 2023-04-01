@@ -31,15 +31,20 @@ export const CheckoutBlock = styled.tbody`
   width: 100%;
 `
 
-export const CheckoutTotal = styled.tfoot`
+export const CheckoutFoot = styled.tfoot`
   width: 100%;
   margin-top: 30px;
-  display: flex;
-  justify-content: end;
+`
 
+export const CheckoutTotal = styled.tr`
   .value {
-  margin-left: auto;
-  font-size: 36px;
-  text-align: end;
+    display: inline-block;
+    width: 100%;
+    margin-left: auto;
+    font-size: 36px;
+    text-align: end;
   }
+`
+export const CheckoutPayment = styled.tr`
+  
 `
