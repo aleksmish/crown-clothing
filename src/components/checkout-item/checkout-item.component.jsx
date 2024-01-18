@@ -16,7 +16,7 @@ const CheckoutItem = ({ cartItem }) => {
   return (
     <CheckoutItemContainer>
       <td className='image-container'>
-        <img src={imageUrl} alt={`${name}`}/>
+        <img loading="lazy" src={imageUrl} alt={`${name}`}/>
       </td>
       <td>
         <span className='name'>{name}</span>
